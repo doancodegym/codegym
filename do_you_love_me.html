@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do you love me??</title>
+</head>
+<script type="text/javascript">
+    function Yes_click()
+    {
+        alert("Yes. I love you ! ");
+    }
+    function No_click()
+    {
+        var x = Math.round(Math.random() * window.innerWidth);
+        var y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById('khoang_cach').style.left = x + 'px';
+        document.getElementById('khoang_cach').style.top = y + 'px';
+    }
+</script>
+</head>
+<body>
+<h1 style="position:absolute; left:550px; top:175px;">Do you love me?</h1>
+<input type="button" value=" YES " onclick="Yes_click()" style="position:absolute; left:600px; top:300px;"/>
+<input type="button" id="khoang_cach" value="  NO  " onmouseover="No_click()" style="position:absolute; left:680px; top:300px;"/>
+
+</body>
+</html>
