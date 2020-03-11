@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra cân nặng</title>
+</head>
+<body>
+<Script>
+    let a = parseInt(prompt("Nhập cân nặng(kg) :"));
+    let b = parseInt(prompt("Nhập chiều cao(m) :"));
+    let c = a/(b*b);
+    // Nhập cân nặng,chiều cao và tính chỉ số BMI
+    if ( c < 18 ){ alert("Bạn bị thiếu cân");}
+    // In ra là thiếu cân
+    else if ( c < 25) { alert("Bình thường");}
+    //In ra là bình thường
+    else if ( c < 30) { alert("Bạn bị thừa cân");}
+    //In ra là thừa cân
+    else {alert("Béo Phì rồi");}
+    //In ra là béo phì
+</Script>
+</body>
+</html>
