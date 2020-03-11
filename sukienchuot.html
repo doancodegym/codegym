@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện chuột</title>
+</head>
+<body>
+<form action="">
+    <img id="ball" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Basketball.png/220px-Basketball.png" alt="ball"/>
+    <p>Click để di chuyển bóng qua phải !</p>
+    <input type="button" value="Click" onclick="moveRight()"/>
+</form>
+<script>
+    let hinh_anh = document.getElementById('ball')
+    function init() {
+        hinh_anh = document.getElementById('ball');
+        hinh_anh.style.position = 'relative';
+        hinh_anh.style.left = '0px';
+    }
+
+    function moveRight() {
+        hinh_anh.style.left = parseInt(hinh_anh.style.left) + 10 + 'px';
+
+    }
+    window.onload = init;
+    
+</script>
+</body>
+</html>
