@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự kiện bàn phím</title>
+</head>
+<body onload="san_sang()">
+<img id="nobita" src="https://james.codegym.vn/pluginfile.php/27447/mod_assign/intro/1.png" style="position:absolute ; left:0 ; top:0 ;"/>
+<script>
+    function phim_len() {
+        let di_chuyen = document.getElementById("nobita");
+        di_chuyen.style.top = parseInt(di_chuyen.style.top) - 5 + 'px';
+    }
+    function phim_xuong() {
+        var di_chuyen = document.getElementById("nobita");
+        di_chuyen.style.top = parseInt(di_chuyen.style.top) + 5 + 'px'
+    }
+    function phim_trai() {
+        var di_chuyen = document.getElementById("nobita");
+        di_chuyen.style.left = parseInt(di_chuyen.style.left) - 5 + 'px';
+    }
+    function phim_phai() {
+        var di_chuyen = document.getElementById("nobita");
+        di_chuyen.style.left = parseInt(di_chuyen.style.left) + 5 + 'px';
+    }
+    function phim_di_chuyen(dieu_khien) {
+        switch (dieu_khien.keyCode) {
+            case 37:
+                phim_trai();
+                break;
+            case 39:
+                phim_phai();
+                break;
+            case 38:
+                phim_len();
+                break;
+            case 40:
+                phim_xuong();
+                break;
+        }
+
+    }
+    function san_sang() {
+        window.addEventListener("keydown", phim_di_chuyen);
+    }
+</script>
+</body>
+</html>
