@@ -1,19 +1,14 @@
-//function for displaying values
-function hienthi(val)
+function maytinh(val)
 {
     document.getElementById("edu").value+=val;
 }
-//function for evaluation
-function giai()
+function ketqua()
 {
     let x = document.getElementById("edu").value;
-    console.log(x);
     let y = eval(x);
-    console.log(y);
     document.getElementById("edu").value = y;
 }
-//function for clearing the display
-function clr()
+function xoa()
 {
     document.getElementById("edu").value = "";
 }
