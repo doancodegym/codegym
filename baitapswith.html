@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập Swith</title>
+</head>
+<body>
+<script>
+    let browser = prompt('Trình duyệt đang sử dụng :');
+    switch (browser) {
+        case 'Edge':
+            alert('Bạn đang sử dụng trình duyệt Edge !');
+        break;
+        case 'Chrome':
+        case 'Firefox':
+        case 'Safari':
+        case 'Opera':
+            alert('Chưa hỗ trợ tốt trên trình duyệt này !');
+        break;
+        default:
+            alert('Trình duyệt này được hỗ trợ !')
+
+    }
+</script>
+</body>
+</html>
