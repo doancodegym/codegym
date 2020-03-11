@@ -10,35 +10,37 @@
 <h2>Caculator</h2>
     <table>
     <tr>
-        <td><input type="button" value="C" onclick="clr()"/> </td>
+        <td><input type="button" value="C" onclick="xoa()"/> </td>
+        <!--Xóa giá trị hiện tại trong input-->
         <td colspan="3"><input type="text" id="edu" style="width:100px;height: border-box"/></td>
-        <!-- clr() function will call clr to clear all value -->
+        <!--Dữ liệu nhập và xuất hiển thị-->
     </tr>
     <tr>
-        <!-- creating buttons and assigning values-->
-        <td><input type="button" value="+" onclick="hienthi('+')"/> </td>
-        <td><input type="button" value="1" onclick="hienthi('1')"/> </td>
-        <td><input type="button" value="2" onclick="hienthi('2')"/> </td>
-        <td><input type="button" value="3" onclick="hienthi('3')"/> </td>
+
+        <td><input type="button" value="+" onclick="maytinh('+')"/> </td>
+        <td><input type="button" value="1" onclick="maytinh('1')"/> </td>
+        <td><input type="button" value="2" onclick="maytinh('2')"/> </td>
+        <td><input type="button" value="3" onclick="maytinh('3')"/> </td>
     </tr>
     <tr>
-        <td><input type="button" value="-" onclick="hienthi('-')"/> </td>
-        <td><input type="button" value="4" onclick="hienthi('4')"/> </td>
-        <td><input type="button" value="5" onclick="hienthi('5')"/> </td>
-        <td><input type="button" value="6" onclick="hienthi('6')"/> </td>
+        <td><input type="button" value="-" onclick="maytinh('-')"/> </td>
+        <td><input type="button" value="4" onclick="maytinh('4')"/> </td>
+        <td><input type="button" value="5" onclick="maytinh('5')"/> </td>
+        <td><input type="button" value="6" onclick="maytinh('6')"/> </td>
     </tr>
     <tr>
-        <td><input type="button" value="*" onclick="hienthi('*')"/> </td>
-        <td><input type="button" value="7" onclick="hienthi('7')"/> </td>
-        <td><input type="button" value="8" onclick="hienthi('8')"/> </td>
-        <td><input type="button" value="9" onclick="hienthi('9')"/> </td>
+        <td><input type="button" value="*" onclick="maytinh('*')"/> </td>
+        <td><input type="button" value="7" onclick="maytinh('7')"/> </td>
+        <td><input type="button" value="8" onclick="maytinh('8')"/> </td>
+        <td><input type="button" value="9" onclick="maytinh('9')"/> </td>
     </tr>
     <tr>
-        <td><input type="button" value="/" onclick="hienthi('/')"/> </td>
-        <td><input type="button" value="." onclick="hienthi('.')"/> </td>
-        <td><input type="button" value="0" onclick="hienthi('0')"/> </td>
-        <!-- Evaluating function call eval()-->
-        <td><input type="button" value="=" onclick="giai()"/> </td>
+        <td><input type="button" value="/" onclick="maytinh('/')"/> </td>
+        <td><input type="button" value="." onclick="maytinh('.')"/> </td>
+        <td><input type="button" value="0" onclick="maytinh('0')"/> </td>
+      <!--Đầu vào bằng các phím-->
+        <td><input type="button" value="=" onclick="ketqua()"/> </td>
+        <!--CLick nhận giá trị đầu ra-->
     </tr>
 </table>
 </center>
