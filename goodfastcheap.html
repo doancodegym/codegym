@@ -5,65 +5,66 @@
     <title>Good - Fast - Cheap</title>
 </head>
 <body>
+<center>
 <form>
     <table border="2px">
         <tr>
             <label>
                 <td> <input type="checkbox" name="good" id="good" onclick="ham_good()"></td>
-                <td><b>Good</b></td>
+                <td><b style="color: red">Good</b></td>
         </label>
         </tr>
         <tr>
             <label>
                 <td><input type="checkbox" name="cheap" id="cheap" onclick="ham_cheap()" ></td>
-                <td><b>Cheap</b></td>
+                <td><b style="color: blue">Cheap</b></td>
     </label>
         </tr>
         <tr>
             <label>
                 <td><input type="checkbox" name="fast" id="fast" onclick="ham_fast()" ></td>
-                <td><b>Fast</b></td>
+                <td><b style="color: deeppink">Fast</b></td>
             </label>
         </tr>
+    </table>
+
+</center>
 <!--  Giao diện hiển thị -->
 </form>
 <script>
     function ham_good() {
-        let x = document.getElementById('good');
-        let y = document.getElementById('cheap');
-        let z = document.getElementById('fast');
-        console.log(x.checked,y.checked,z.checked);
-        if(y.checked && z.checked){
+        let g = document.getElementById('good');
+        let c = document.getElementById('cheap');
+        let f = document.getElementById('fast');
+        if(c.checked && f.checked){
             if(Math.random()<0.5){
-                y.checked = false;
+                c.checked = false;
             }else{
-                z.checked = false;
+                f.checked = false;
             }
         }
     }
     function ham_cheap() {
-        let x = document.getElementById('good');
-        let y = document.getElementById('cheap');
-        let z = document.getElementById('fast');
-        console.log(x.checked,y.checked,z.checked);
-        if(x.checked && z.checked){
+        let g = document.getElementById('good');
+        let c = document.getElementById('cheap');
+        let f = document.getElementById('fast');
+        if(g.checked && f.checked){
             if(Math.random()<0.5){
-                x.checked = false;
+                g.checked = false;
             }else{
-                y.checked = false;
+                c.checked = false;
             }
         }
     }
     function ham_fast() {
-        let x = document.getElementById('good');
-        let y = document.getElementById('cheap');
-        let z = document.getElementById('fast');
-        console.log(x.checked,y.checked,z.checked);
-        if(x.checked && y.checked){
+        let g = document.getElementById('good');
+        let c = document.getElementById('cheap');
+        let f = document.getElementById('fast');
+        if(g.checked && c.checked){
             if(Math.random()<0.5){
-                x.checked = false;
+                g.checked = false;
             }else{
-                y.checked = false;
+                c.checked = false;
             }
         }
     }
